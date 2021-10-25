@@ -5,7 +5,7 @@ import RecipeBook from '../RecipeBook'
 function App () {
   return(
     <>
-    UP AND RUNNING
+
     </>
   )
 }
