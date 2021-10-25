@@ -12,7 +12,7 @@ function RecipeBook () {
   } , [])
 
   return (
-    <div>
+    <div id="recipe-container">
       {recipes.map(recipe => <RecipeCard recipe={recipe}/>)}
     </div>
   )

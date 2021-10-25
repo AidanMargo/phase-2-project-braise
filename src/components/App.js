@@ -1,9 +1,9 @@
 import Header from "./Header"
 import RecipeBook from './RecipeBook'
-import Search from './Search'
+import Filter from './Filter'
 import {useState} from 'react'
 import '../style.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App () {
 
@@ -11,8 +11,8 @@ function App () {
 
   return(
     <>
-    <Header />
-    <Search search={search}/>
+    <Header search={search}/>
+    <Filter />
     <RecipeBook />
     
     </>
