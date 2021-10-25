@@ -1,0 +1,13 @@
+#categories {
+  display: flex;
+  justify-content: center;
+}
+
+.cuisine-type{
+  margin: 1em;
+}
+
+img {
+  width: 250px;
+  height: 250px;  
+}
