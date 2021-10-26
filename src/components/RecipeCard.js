@@ -4,7 +4,16 @@ import Button from 'react-bootstrap/Button'
 
 function RecipeCard ({recipe:{name, image, ingredients, instructions, servings}}) {
   return (
-    
+ <>
+    <style type="text/css">
+        {`
+          .btn-info {
+            margin-right: 1em;
+          }
+        `}
+      </style>
+ 
+
   <div id="card">
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={image} />
@@ -20,11 +29,12 @@ function RecipeCard ({recipe:{name, image, ingredients, instructions, servings}}
           <p >Instructions: {instructions}</p>
         </div>
         </Card.Text>
-        <Button variant="primary">Edit</Button>
+        <Button variant="info">Edit</Button>
+        <Button variant="danger">Delete</Button>
     </Card.Body>
   </Card>
   </div>
-
+</>
     // <div>
     //   <img src={image} />
     //   <h1>{name}</h1>
