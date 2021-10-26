@@ -58,9 +58,9 @@ function App () {
     <>
     <Header search={search} updateSearch={updateSearch}/>
     <Filter handleFilter={handleFilter}/>
-    {/* <Route path="/recipes"> */}
+    <Route path="/recipes">
       <RecipeBook recipes={filteredRecipes()}/>
-    {/* </Route> */}
+    </Route>
     <Form addRecipeToState={addRecipeToState}/>
     </>
   )
