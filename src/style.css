@@ -1,5 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root{
-  background-color:rgba(146, 192, 163, 0.3)
+  background-color:rgb(224, 228, 225);
 }
 #header-name {
   font-family: 'Cinzel', serif;
