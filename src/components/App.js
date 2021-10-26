@@ -34,24 +34,30 @@ function App () {
 
   const handleFilter = (e) => {
     setFilter(e.target.innerText)
-    console.log(e.target.innerText)
+    // console.log(e.target.innerText)
   }
 
   const filteredRecipes = () => {
-    switch(filter) {
-      case 'American':
-        return recipes.filter(recipe => recipe.type === 'American')
-      case 'Mexican':
-        return recipes.filter(recipe => recipe.type === 'Mexican')
-      case 'Chinese':
-        return recipes.filter(recipe => recipe.type === 'Chinese')
-      case 'Thai':
-        return recipes.filter(recipe => recipe.type === 'Thai')
-      case 'Italian':
-        return recipes.filter(recipe => recipe.type === 'Italian')
-      default:
-        return recipes;
+    if (filter === "" || filter === "All") {
+      return searchResults()
+    } else {
+    return recipes.filter(recipe => recipe.type === filter)
     }
+
+    // switch(filter) {
+    //   case 'American':
+    //     return recipes.filter(recipe => recipe.type === 'American')
+    //   case 'Mexican':
+    //     return recipes.filter(recipe => recipe.type === 'Mexican')
+    //   case 'Chinese':
+    //     return recipes.filter(recipe => recipe.type === 'Chinese')
+    //   case 'Thai':
+    //     return recipes.filter(recipe => recipe.type === 'Thai')
+    //   case 'Italian':
+    //     return recipes.filter(recipe => recipe.type === 'Italian')
+    //   default:
+    //     return searchResults();
+    // }
   }
 
   return(
