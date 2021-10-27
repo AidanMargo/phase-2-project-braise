@@ -1,37 +1,34 @@
 import React, {useState} from "react";
-import Ingredient from "./Ingredient";
+import {NavLink, Link} from "react-router-dom"
+
 function Form ({addRecipeToState}) {
 
   const [formData, setFormData] =useState({
     name:'',
     image:'',
-    ingredients:[],
+    ingredients:'',
     instructions:''
   })
 
-  const handleChange = (e) => setFormData(e.target.value)
+  const handleChange = (e) => setFormData({...formData, [e.target.name]: e.target.value})
 
   const addRecipe = (e) => {
     e.preventDefault()
-    const newRecipe ={formData}
+    const newRecipe ={ ...formData}
     addRecipeToState(newRecipe)
-    console.log("submitted")
   }
 
-  const addIngredient = (e) => {
-    e.preventDefault()
-    
-  }
 
   return (
     <div id="form-container">
       <form id="new-recipe-form">
-        <label htmlFor="dishname">Name:</label><input id="dishname" name="dishname" value={formData.dishname} onChange={handleChange}/>
-        <label htmlFor="image">Image:</label><input id="image" name="image" value={formData.image} onChange={handleChange}/>
-        <label htmlFor="ingredients">Ingredients:</label> <input id="ingredient-input" name="ingredient" value={formData.ingredient} onChange={handleChange}/>
-        <label htmlFor="instructions">Instructions:</label> <input id="instruction-input" name="instructions" value={formData.instructions} onChange={handleChange}/>
-        <button onClick={addIngredient}>Add Ingredient</button>
-        <button onClick={addRecipe}>Submit</button>
+        <label htmlFor="dishname">Name:</label><input class ="form-input" id="dishname" name="name" value={formData.dishname} onChange={handleChange}/>
+        <label htmlFor="image">Image:</label><input class ="form-input" id="image" name="image" value={formData.image} onChange={handleChange}/>
+        <label htmlFor="ingredients">Ingredients:</label> <input class ="form-input" id="ingredient-input" name="ingredients" value={formData.ingredients} onChange={handleChange} placeholder="Comma is required between each ingredient"/>
+        <label htmlFor="instructions">Instructions:</label> <input class ="form-input" id="instruction-input" name="instructions" value={formData.instructions} onChange={handleChange}/>
+        <Link to="/recipes">
+          <button onClick={(e) => addRecipe(e)}>Submit</button>
+        </Link>
       </form>
 
     </div>

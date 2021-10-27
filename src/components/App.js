@@ -29,7 +29,13 @@ function App () {
 
   const addRecipeToState = (userRecipeInput) => {
     const updatedRecipeList = [userRecipeInput, ...recipes]
-    setRecipes(updatedRecipeList)
+    fetch('http://localhost:4000/recipes', {
+      method:'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(userRecipeInput)
+    }).then(setRecipes(updatedRecipeList)).then(console.log(updatedRecipeList))
   }
 
   const handleFilter = (e) => {

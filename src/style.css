@@ -42,10 +42,9 @@ a {
   border-radius: 6px;
 }
 
-#form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.form-input {
+  width: 25rem;
+  margin-bottom: 1em;
 }
 
 #new-recipe-form {
@@ -55,6 +54,7 @@ a {
 }
 
 #ingredient-input, #instruction-input {
+  text-align: center;
   height: 10rem;
 }
 #recipe-container {
@@ -102,7 +102,12 @@ img {
   overflow-y: auto;
 }
 
-
+#ingredient-edit-input {
+  width: 15rem;
+  padding: 0.5em 0;
+  height: 9rem;
+  width: 15.8rem;
+}
 @keyframes rainbow {
   0%{background-position: left;}
   50%{background-position: right;}
@@ -132,4 +137,8 @@ button.btn.btn-success:hover {
 }
 .fa-edit {
  margin-left: 0.5em;
+}
+
+a {
+  text-decoration: none;
 }
