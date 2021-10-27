@@ -60,14 +60,28 @@ function App () {
     // }
   }
 
+  const handleDelete = (id) => {
+    fetch(`http://localhost:4000/recipes/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+    .then(setRecipes(recipes.filter(recipe => recipe.id !== id)))
+    .then(console.log('Success'))
+  }
+
+
   return(
     <>
     <Header search={search} updateSearch={updateSearch}/>
     <Filter handleFilter={handleFilter}/>
     <Route path="/recipes">
-      <RecipeBook recipes={filteredRecipes()}/>
+      <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
     </Route>
-    <Form addRecipeToState={addRecipeToState}/>
+    <Route exact path="/new">
+      <Form addRecipeToState={addRecipeToState}/>
+    </Route>
     </>
   )
 }

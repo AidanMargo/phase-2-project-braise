@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
 
-function RecipeCard ({recipe:{name, image, ingredients, instructions, servings}}) {
+function RecipeCard ({recipe, recipe:{name, image, ingredients, instructions, servings}, handleDelete}) {
   return (
  <>
     <style type="text/css">
@@ -29,8 +29,8 @@ function RecipeCard ({recipe:{name, image, ingredients, instructions, servings}}
           <p >Instructions: {instructions}</p>
         </div>
         </Card.Text>
-        <Button variant="info">Edit</Button>
-        <Button variant="danger">Delete</Button>
+        <Button variant="info">Edit<i class="fas fa-edit"></i></Button>
+        <Button variant="danger" onClick={() => handleDelete(recipe.id)}><i class="fas fa-trash-alt"></i></Button>
     </Card.Body>
   </Card>
   </div>

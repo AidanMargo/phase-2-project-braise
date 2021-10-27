@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
-#root{
-  background-color:rgb(224, 228, 225);
+#root {
+  font-family: 'Karla', sans-serif;
 }
+
+.bg-dark {
+  background-color: rgba(0,0,0,0.8);
+}
+
+a {
+  text-decoration: none;
+}
+
 #header-name {
   font-family: 'Cinzel', serif;
   font-size: 3rem;
@@ -33,10 +42,25 @@
   border-radius: 6px;
 }
 
+#form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-recipe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ingredient-input, #instruction-input {
+  height: 10rem;
+}
 #recipe-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
   justify-self: center;
   grid-gap: 2.5%;
 }
@@ -49,7 +73,7 @@
 .cuisine-type{
   margin: 1em;
   transition: 0.3s ease;
-  background: linear-gradient(to right, rgb(184, 24, 24), rgb(202, 95, 81), rgb(95, 91, 92));
+  background: linear-gradient(to right, rgb(184, 24, 24), rgb(202, 95, 81), rgb(199, 187, 190));
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
@@ -61,14 +85,10 @@
   color: rgba(0,0,0,0)
 }
 
-@keyframes rainbow {
-  0%{background-position: left;}
-  50%{background-position: right;}
-  100%{background-position: left;}
-}
 
 #card {
   justify-self: center;
+  margin-bottom: 1em;
 }
 
 img {
@@ -80,4 +100,36 @@ img {
   height: 15rem;
   max-height: 20rem;
   overflow-y: auto;
+}
+
+
+@keyframes rainbow {
+  0%{background-position: left;}
+  50%{background-position: right;}
+  100%{background-position: left;}
+}
+
+button.btn.btn-info {
+  margin: 0 1em;
+  background-color: #f0c578;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button.btn.btn-info:hover {
+  background-color:rgb(140, 207, 202);
+}
+
+button.btn.btn-success{
+  margin: 0 1em;
+  transition: 0.3s ease;
+  background-image: linear-gradient(50deg, rgb(184, 24, 24), rgb(202, 95, 81));
+  border: none;
+}
+
+button.btn.btn-success:hover {
+  background-color: rgba(0,0,0,0)
+}
+.fa-edit {
+ margin-left: 0.5em;
 }

@@ -1,22 +1,26 @@
-import Search from "./Search"
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
+import {Route, Link} from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
+import Search from './Search'
 
 function Header ({search, updateSearch}) {
   return (
-    <>
-    <style>
-      {`
-      .btn-`}
-    </style>
+    
     <div>
     <Navbar variant="dark" bg="dark">
       <Container >
-      <Navbar.Brand href="#home" id="header-name">Braise</Navbar.Brand>
+      <Link to="/">
+        <Navbar.Brand href="#home" id="header-name">Braise</Navbar.Brand>
+      </Link>
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">
-        <span><Button variant="info">Recipes</Button></span>
+        <Link to="/recipes">
+          <Button variant="success">Recipes</Button>
+        </Link>
+        <Link to="/new">
+          <Button variant="success">Add a Recipe</Button>
+        </Link>
       <Navbar.Text>
         <Search search={search} updateSearch={updateSearch}/>
       </Navbar.Text>
@@ -24,7 +28,6 @@ function Header ({search, updateSearch}) {
   </Container>
 </Navbar>
     </div>
-  </>
   )
 }
 
