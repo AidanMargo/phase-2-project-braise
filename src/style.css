@@ -186,6 +186,23 @@
   #button-container {
     text-align: center;
   }
+
+  #ingredients::-webkit-scrollbar {
+    width: 7px;
+    height: 25%;
+  }
+  #ingredients::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(184, 116, 116, 0.719);
+}
+
+  #instructions::-webkit-scrollbar {
+    width: 7px;
+  }
+  #instructions::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: rgba(184, 116, 116, 0.719);
+}
 }
 
 @media(min-width: 768px) {

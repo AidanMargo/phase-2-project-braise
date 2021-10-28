@@ -25,11 +25,11 @@ function App () {
   } , [])
 
   const searchResults = () => {
-    return search.length > 0 ? recipes.filter(recipe => recipe.name.toLowerCase().includes(search)) : recipes
+    return search.length > 0 ? recipes.filter(recipe => recipe.name.toLowerCase().includes(search.toLowerCase())) : recipes
   }
 
   const addRecipeToState = (userRecipeInput) => {
-    const updatedRecipeList = [userRecipeInput, ...recipes]
+    const updatedRecipeList = [...recipes,userRecipeInput]
     fetch('http://localhost:4000/recipes', {
       method:'POST',
       headers: {
