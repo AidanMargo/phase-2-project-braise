@@ -6,6 +6,7 @@ function RecipeCard ({recipe, recipe:{id, name, image, ingredients, instructions
 
   const [Edit, setEdit] = useState(false);
   const [updatedIng, setUpdatedIng] = useState(ingredients);
+  const [originalIng, setOriginalIng] = useState('')
 
   const ingredientItem = () => {
     return updatedIng.split(",").map(ingredient => <li>{ingredient}</li>)
@@ -26,12 +27,9 @@ function RecipeCard ({recipe, recipe:{id, name, image, ingredients, instructions
     .then(setUpdatedIng(newIngredients))
   }
 
-  const handleEdit = (e) => setEdit(!Edit);
+  const handleEdit = (id) => setEdit(!Edit)
 
-  const cancelEdit = () => {
-    setUpdatedIng(ingredients)
-    setEdit(!Edit)
-  }
+
 
 
   const ingredientEdit = () => {
@@ -59,7 +57,6 @@ function RecipeCard ({recipe, recipe:{id, name, image, ingredients, instructions
           {Edit? ingredientEdit(): ingredientItem()}
           {Edit ?
           <> 
-          <Button variant='info' className="edit-btn"onClick={() =>  cancelEdit()}>Cancel</Button>
           <Button variant='info' onClick={() => handleEdit()}>Commit</Button>
           </>
            : null }
