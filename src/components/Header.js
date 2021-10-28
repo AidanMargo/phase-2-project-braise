@@ -10,12 +10,12 @@ function Header ({search, updateSearch}) {
     <div>
     <Navbar variant="dark" bg="dark">
       <Container >
-      <Link to="/home">
+      <Link to="/">
         <Navbar.Brand href="#home" id="header-name">Braise</Navbar.Brand>
       </Link>
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">
-        <Link to="/contact">
+        <Link to="/contactus">
           <Button variant="success">Contact Us</Button>
         </Link>
         <Link to="/recipes">

@@ -6,6 +6,7 @@ import '../style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Route} from 'react-router-dom'
 import Form from "./Form"
+import ContactUs from "./ContactUs"
 
 function App () {
 
@@ -82,11 +83,17 @@ function App () {
     <>
     <Header search={search} updateSearch={updateSearch}/>
     <Filter handleFilter={handleFilter}/>
-    <Route path="/recipes">
+    <Route exact path="/recipes" >
+      <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
+    </Route>
+    <Route exact path="/" >
       <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
     </Route>
     <Route exact path="/new">
       <Form addRecipeToState={addRecipeToState}/>
+    </Route>
+    <Route exact path="/contactus">
+      <ContactUs/>
     </Route>
     </>
   )
