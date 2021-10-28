@@ -2,10 +2,10 @@
 
 function ContactUs () {
   return (
-    <div id="header-name">
-      <p>Contact Us</p>
-      <p>Aidan Margo: aidanmargo@gmail.com</p>
-      <p>Avery Lin: tclin100@gmail.com</p>
+    <div id="contact-name">
+      <h1 id="contact-us">Contact Us</h1>
+      <p class="emails">Aidan Margo: aidanmargo@gmail.com</p>
+      <p class="emails">Avery Lin: tclin100@gmail.com</p>
     </div>
   )
 }

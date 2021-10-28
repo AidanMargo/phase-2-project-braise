@@ -1,9 +1,10 @@
 import React, {useState} from "react";
-import {NavLink, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
-function Form ({addRecipeToState}) {
+function Form ({addRecipeToState, recipes}) {
 
   const [formData, setFormData] =useState({
+    id: Math.floor(Math.random() * 1000),
     name:'',
     image:'',
     ingredients:'',
@@ -11,10 +12,14 @@ function Form ({addRecipeToState}) {
     type:''
   })
 
-  const handleChange = (e) => setFormData({...formData, [e.target.name]: e.target.value})
+  // console.log(recipes.slice(-1).id)
 
-  const addRecipe = (e) => {
-    e.preventDefault()
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value})
+    console.log(e.target.value)
+  }
+
+  const addRecipe = () => {
     const newRecipe ={ ...formData}
     addRecipeToState(newRecipe)
   }
@@ -28,7 +33,8 @@ function Form ({addRecipeToState}) {
         <label htmlFor="image">Image:</label><input class ="form-input" id="image" name="image" value={formData.image} onChange={handleChange}/>
         <label htmlFor="ingredients">Ingredients:</label> <input class ="form-input" id="ingredient-input" name="ingredients" value={formData.ingredients} onChange={handleChange} placeholder="Comma is required between each ingredient"/>
         <label htmlFor="instructions">Instructions:</label> <input class ="form-input" id="instruction-input" name="instructions" value={formData.instructions} onChange={handleChange}/>
-        <select onChange={handleChange}>Type:
+        <label htmlFor="type">Type:</label>
+        <select name='type' onChange={handleChange} id="typeSelect">Type:
             <option value=''></option>
             <option value='American'>American</option>
             <option value='Chinese'>Chinese</option>
@@ -37,7 +43,7 @@ function Form ({addRecipeToState}) {
             <option value='Italian'>Italian</option>
             </select>
         <Link to="/recipes">
-          <button onClick={(e) => addRecipe(e)}>Submit</button>
+          <button onClick={() => addRecipe()}>Submit</button>
         </Link>
 
         </form>

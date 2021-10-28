@@ -1,6 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
-import {Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 import Search from './Search'
 
@@ -16,7 +16,7 @@ function Header ({search, updateSearch}) {
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">
         <Link to="/contactus">
-          <Button variant="success">Contact Us</Button>
+          <Button variant="success">Contact</Button>
         </Link>
         <Link to="/recipes">
           <Button variant="success">Recipes</Button>

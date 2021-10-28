@@ -16,4 +16,3 @@ function Search ({search, updateSearch}) {
 }
 
 export default Search;
-{/*  */}

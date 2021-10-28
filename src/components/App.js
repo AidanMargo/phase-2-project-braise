@@ -67,7 +67,9 @@ function App () {
     // }
   }
 
-  const handleDelete = (id) => {
+  const handleDelete = (name, id) => {
+    const deletePrompt = prompt(`Are you sure you want to delete your ${name} recipe? Enter 'Yes' or 'No'`)
+    if(deletePrompt.toLowerCase() === 'yes'){
     fetch(`http://localhost:4000/recipes/${id}`, {
       method: 'DELETE',
       headers: {
@@ -75,18 +77,22 @@ function App () {
       },
     })
     .then(setRecipes(recipes.filter(recipe => recipe.id !== id)))
-    .then(console.log('Success'))
+    .then(console.log(recipes))
+    }
   }
 
+  
 
   return(
     <>
     <Header search={search} updateSearch={updateSearch}/>
-    <Filter handleFilter={handleFilter}/>
+    
     <Route exact path="/recipes" >
+      <Filter handleFilter={handleFilter}/>
       <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
     </Route>
     <Route exact path="/" >
+      <Filter handleFilter={handleFilter}/>
       <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
     </Route>
     <Route exact path="/new">
