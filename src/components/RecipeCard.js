@@ -66,8 +66,10 @@ function RecipeCard ({recipe, recipe:{id, name, image, ingredients, instructions
           <p >Instructions: {instructions}</p>
         </div>
         </Card.Text>
-        <Button variant="info" onClick={() => handleEdit()}>Edit<i class="fas fa-edit"></i></Button>
-        <Button variant="danger" onClick={() => handleDelete(recipe.name, recipe.id)}><i class="fas fa-trash-alt"></i></Button>
+        <div id="button-container">
+          <Button variant="info" onClick={() => handleEdit()}>Edit<i class="fas fa-edit"></i></Button>
+          <Button variant="danger" onClick={() => handleDelete(recipe.name, recipe.id)}><i class="fas fa-trash-alt"></i></Button>
+        </div>
     </Card.Body>
   </Card>
   </div>

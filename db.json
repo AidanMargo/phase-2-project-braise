@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Scallop Pasta",
       "image": "https://www.christinascucina.com/wp-content/uploads/2020/08/fullsizeoutput_ea92-768x1074.jpeg",
-      "ingredients": "1lb scallops, Salt, 12oz pasta, 4 cloves of garlic, 3oz of butter, 1/3cup of dry white wine, chopped parsely",
+      "ingredients": "1lb scallops, Salt, 12oz pasta, 4 cloves of garlic, 3oz of butter",
       "instructions": "Soak the scallops for 10 minutes in a brine solution (3 Tbsp Kosher salt in 16 oz water.) Remove after 10 minutes and place on a rack to dry. Cook pasta to package instructions. Heat oil over medium-high heat, sear scallops 1 to 2 minutes on each side before adding garlic and parsely. Lower heat, and add in the butter, add the wine and turn down heat to keep warm.",
       "type": "Italian"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Cucumber Salad",
       "image": "https://i.pinimg.com/564x/6d/4e/1f/6d4e1fed5eeee1b784ae3b5d1bed17a8.jpg",
-      "ingredients": "1 peeled english cucumber, 3 cloves minced garlic, 1Tbsp rice wine vinegar, 1Tbsp light soy sauce, 1tsp sugar, 1/2 tsp salt, 1/2tsp sesame oil, 2tsp chili oil",
+      "ingredients": "1 small honeydew melon / rockmelon,1 cup sago (tapioca pearls), 1/2 cup sugar, 1/2 cup water, 1 cup canned coconut milk  ",
       "instructions": "Dry cucumber with a paper towel and crush or cut into bite sized pieces and place into a bowl. Add the garlic. In another bowl, add vinegar, soy sauce, sugar, salt, and sesame oil and mix well. When ready to serve, pour sauce over cucumber and add chili oil as desired.",
       "type": "Chinese"
     },
@@ -42,21 +42,21 @@
     },
     {
       "id": 6,
-      "name": "SeafoodPasta7",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.VaWnsx-lGSwsMlcu6WxmggHaIL&pid=Api&P=0&w=300&h=300",
-      "ingredients": "1lb scallops, Salt, 12oz pasta, 4 cloves of garlic, 3oz of butter, 1/3cup of dry white wine,chopped parsely",
-      "instructions": "Soak the scallops for 10 minutes in a brine solution (3 Tbsp Kosher salt in 16 oz water.) Remove after 10 minutes and place on a rack to dry. Cook pasta to package instructions. Heat oil over medium-high heat, sear scallops 1 to 2 minutes on each side before adding garlic and parsely. Lower heat, and add in the butter, add the wine and turn down heat to keep warm.",
+      "name": "Corn Dogs",
+      "image": "https://natashaskitchen.com/wp-content/uploads/2020/10/Corn-Dogs-11.jpg",
+      "ingredients": "12 hot dogs, 12 sticks, peanut oil for frying, 1 1/2 cups fine yellow corn meal, 1 1/4 cups all-purpose flour 1/4 cup granulated sugar,1 Tbsp baking powder, 1/4 tsp salt, 1 3/4 cups buttermilk, 1 large egg, 1 Tbsp olive oil or vegetable oil, 1 Tbsp honey",
+      "instructions": "Pour 2-3” of oil in a large pot or dutch oven and heat to 350˚F over medium heat. Pat dry with paper towels. Insert sticks into hot dogs. Whisk together dry ingredients (corn meal, flour, sugar, baking powder and salt). Whisk together wet ingredients (buttermilk, egg, 1 Tbsp oil and honey). Combine wet and dry ingredients and whisk to combine. Pour batter into a drinking glass almost to the top and dip hot dogs. Put corndog straight down into batter and give it a little twirl to fully coat the hot dogs then swirl as you lift up. Let excess drip off. Hold corn dog at an angle in the hot oil for 5-7 seconds to let it seal then drop into oil (this keeps them from sticking to the bottom of the pot).  Fry 3 minutes or until golden brown. Fry up to 2-3 at a time (so you don’t drop the temperature), turning them as needed to brown evenly. Transfer to a wire rack to cool.",
       "servings": 4,
-      "type": "Italian"
+      "type": "American"
     },
     {
       "id": 7,
-      "name": "SeafoodPasta7",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.VaWnsx-lGSwsMlcu6WxmggHaIL&pid=Api&P=0&w=300&h=300",
-      "ingredients": "1lb scallops, Salt, 12oz pasta, 4 cloves of garlic, 3oz of butter, 1/3cup of dry white wine, chopped parsely",
-      "instructions": "Soak the scallops for 10 minutes in a brine solution (3 Tbsp Kosher salt in 16 oz water.) Remove after 10 minutes and place on a rack to dry. Cook pasta to package instructions. Heat oil over medium-high heat, sear scallops 1 to 2 minutes on each side before adding garlic and parsely. Lower heat, and add in the butter, add the wine and turn down heat to keep warm.",
+      "name": "Coconut Milk, Melon with Sago Dessert",
+      "image": "http://www.fussfreecooking.com/wp-content/uploads/2010/12/a31.jpg",
+      "ingredients": "1 small honeydew melon / rockmelon,1 cup sago (tapioca pearls), 1/2 cup sugar, 1/2 cup water, 1 cup canned coconut milk  with 1/2 tsp salt",
+      "instructions": "Boil sugar and water in a pot until the sugar is completely dissolved and becomes syrupy. Set aside to cool. In a separate pot, boil at least 7 cups of water. When the water is boiling, add sago and cook on medium-high heat until mostly translucent ( sago will dissolve and becomes gooey when overcooked – hence the visible white dots). Also, keep stirring to avoid the sago from sticking to the pot. When the sago is cooked, drain it over a sieve and rinse it under cold running water. Set aside. Use a melon baler, scoop the flesh out. Alternatively, you can dice the melon instead. Keep half the melon portion for later (for serving) and blend the remaining portion using a food processor. Mix the syrup, sago, melon and coconut milk in a large serving bowl. Chill before serving (note – as the mixture chills, the consistency will thicken a little).",
       "servings": 4,
-      "type": "Italian"
+      "type": "Chinese"
     }
   ]
 }
