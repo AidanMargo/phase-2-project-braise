@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Cucumber Salad",
       "image": "https://i.pinimg.com/564x/6d/4e/1f/6d4e1fed5eeee1b784ae3b5d1bed17a8.jpg",
-      "ingredients": "1 small honeydew melon / rockmelon,1 cup sago (tapioca pearls), 1/2 cup sugar, 1/2 cup water, 1 cup canned coconut milk  ",
+      "ingredients": "1 small honeydew melon / rockmelon,1 cup sago (tapioca pearls), 1/2 cup sugar, 1/2 cup water, 1 cup canned coconut milk  with 1/2 tsp salt",
       "instructions": "Dry cucumber with a paper towel and crush or cut into bite sized pieces and place into a bowl. Add the garlic. In another bowl, add vinegar, soy sauce, sugar, salt, and sesame oil and mix well. When ready to serve, pour sauce over cucumber and add chili oil as desired.",
       "type": "Chinese"
     },
@@ -57,6 +57,14 @@
       "instructions": "Boil sugar and water in a pot until the sugar is completely dissolved and becomes syrupy. Set aside to cool. In a separate pot, boil at least 7 cups of water. When the water is boiling, add sago and cook on medium-high heat until mostly translucent ( sago will dissolve and becomes gooey when overcooked – hence the visible white dots). Also, keep stirring to avoid the sago from sticking to the pot. When the sago is cooked, drain it over a sieve and rinse it under cold running water. Set aside. Use a melon baler, scoop the flesh out. Alternatively, you can dice the melon instead. Keep half the melon portion for later (for serving) and blend the remaining portion using a food processor. Mix the syrup, sago, melon and coconut milk in a large serving bowl. Chill before serving (note – as the mixture chills, the consistency will thicken a little).",
       "servings": 4,
       "type": "Chinese"
+    },
+    {
+      "id": 100,
+      "name": "Thai Basil Chicken",
+      "image": "https://gypsyplate.com/wp-content/uploads/2021/03/pad-krapow-gai_01-768x1152.jpg",
+      "ingredients": "1.5 lbs ground chicken, 1.5 cup basil, 12-13 cloves garlic, 7-8 red bird chilis, 3 Tbsp soy sauce, 3 Tbsp oyster sauce, 1 Tbsp fish sauce, 1 tsp sugar, 3 Tbsp vegetable oil, 4 eggs",
+      "instructions": "Crush chilis and peeled garlic into a paste. Heat oil in wok over high heat. Add chili-garlic paste and stir for 20 seconds. Add chicken, stir continuously 6-8 minutes, or until chicken is thoroughly cooked. Add sugar and sauces, stir until well mixed. Fold in basil. Remove from heat immediately, so the basil doesn't overcook. Eggs Fill frying pan with 1/4 inch of oil. Get nice and hot. Drop in eggs. Fry until edges are nice and crispy, spooning hot oil over eggs to cook the top. Cook until desired doneness. Serve your Thai Basil Chicken over hot cooked rice and top with egg. Enjoy!",
+      "type": "Thai"
     }
   ]
 }

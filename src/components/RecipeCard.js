@@ -54,16 +54,12 @@ function RecipeCard ({recipe, recipe:{id, name, image, ingredients, instructions
         <Card.Text>
         <div id="ingredients">
           {Edit? ingredientEdit(): ingredientItem()}
-          {Edit ?
-          <> 
-          <Button variant='info' onClick={() => handleEdit()}>Commit</Button>
-          </>
-           : null }
         </div>
         </Card.Text>
         <Card.Text>
         <div id="instructions">
-          <p >Instructions: {instructions}</p>
+          <h3>Instructions: </h3>
+          <p>{instructions}</p>
         </div>
         </Card.Text>
         <div id="button-container">
