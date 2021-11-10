@@ -7,9 +7,6 @@ function RecipeCard ({recipe, recipe:{id, name, image, ingredients, instructions
   const [Edit, setEdit] = useState(false);
   const [updatedIng, setUpdatedIng] = useState(ingredients);
 
-  const ingredientItem = () => {
-    return updatedIng.split(",").map(ingredient => <li>{ingredient}</li>)
-  }
 
   const updateIngredients = (e, id) => { 
     const newIngredients= e.target.value;
@@ -47,13 +44,13 @@ function RecipeCard ({recipe, recipe:{id, name, image, ingredients, instructions
   return (
  <>
   <div id="card">
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem' }} onClick={() => console.log(recipe)}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
         <div id="ingredients">
-          {Edit? ingredientEdit(): ingredientItem()}
+          {Edit? ingredientEdit(): updatedIng.split(",").map(ingredient => <li>{ingredient}</li>)}
         </div>
         </Card.Text>
         <Card.Text>

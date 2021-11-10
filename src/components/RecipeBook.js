@@ -5,7 +5,7 @@ function RecipeBook ({recipes, handleDelete}) {
 
   return (
     <div id="recipe-container">
-      {recipes.map(recipe => <RecipeCard recipe={recipe} handleDelete={handleDelete}/>)}
+      {recipes.map(recipe => <RecipeCard key={recipe.id} recipe={recipe} handleDelete={handleDelete}/>)}
     </div>
   )
 }

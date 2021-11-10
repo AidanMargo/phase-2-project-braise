@@ -10,7 +10,7 @@ function Header ({search, updateSearch}) {
     <div>
     <Navbar variant="dark" bg="dark">
       <Container >
-      <Link to="/">
+      <Link to="/recipes">
         <Navbar.Brand href="#home" id="header-name">Braise</Navbar.Brand>
       </Link>
       <Navbar.Toggle />

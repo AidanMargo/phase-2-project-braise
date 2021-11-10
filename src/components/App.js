@@ -41,9 +41,9 @@ function App () {
 
   const handleFilter = (e) => {
     setFilter(e.target.innerText)
-    // console.log(e.target.innerText)
   }
 
+ 
   const filteredRecipes = () => {
     if (filter === "" || filter === "All") {
       return searchResults()
@@ -51,6 +51,7 @@ function App () {
     return recipes.filter(recipe => recipe.type === filter)
     }
 
+  
     // switch(filter) {
     //   case 'American':
     //     return recipes.filter(recipe => recipe.type === 'American')
@@ -65,6 +66,7 @@ function App () {
     //   default:
     //     return searchResults();
     // }
+
   }
 
   const handleDelete = (name, id) => {
@@ -87,11 +89,11 @@ function App () {
     <>
     <Header search={search} updateSearch={updateSearch}/>
     
-    <Route exact path="/recipes" >
+    {/* <Route exact path="/recipes" >
       <Filter handleFilter={handleFilter}/>
       <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
-    </Route>
-    <Route exact path="/" >
+    </Route> */}
+    <Route path="/recipes" >
       <Filter handleFilter={handleFilter}/>
       <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
     </Route>
