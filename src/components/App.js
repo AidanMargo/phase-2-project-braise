@@ -19,7 +19,7 @@ function App () {
   }
 
   useEffect(() => {
-    fetch ('http://localhost:4000/recipes')
+    fetch (`${process.env.REACT_APP_API_URL}/recipes`)
     .then(resp => resp.json())
     .then (data => setRecipes(data))
   } , [])
@@ -30,7 +30,7 @@ function App () {
 
   const addRecipeToState = (userRecipeInput) => {
     const updatedRecipeList = [...recipes,userRecipeInput]
-    fetch('http://localhost:4000/recipes', {
+    fetch(`${process.env.REACT_APP_API_URL}/recipes`, {
       method:'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -72,7 +72,7 @@ function App () {
   const handleDelete = (name, id) => {
     const deletePrompt = prompt(`Are you sure you want to delete your ${name} recipe? Enter 'Yes' or 'No'`)
     if(deletePrompt.toLowerCase() === 'yes'){
-    fetch(`http://localhost:4000/recipes/${id}`, {
+    fetch(`${process.env.REACT_APP_API_URL}/recipeS/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
