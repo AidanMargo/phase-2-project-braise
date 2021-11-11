@@ -43,8 +43,8 @@ function RecipeCard ({recipe, recipe:{id, name, image, ingredients, instructions
 
   return (
  <>
-  <div id="card">
-    <Card style={{ width: '18rem' }} onClick={() => console.log(recipe)}>
+  <div id="card" class="yes">
+    <Card  style={{ width: '18rem' }} onClick={() => console.log(recipe)}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>

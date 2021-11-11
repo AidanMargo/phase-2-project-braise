@@ -89,14 +89,14 @@ function App () {
     <>
     <Header search={search} updateSearch={updateSearch}/>
     
-    {/* <Route exact path="/recipes" >
+    <Route exact path="/" >
+      <Filter handleFilter={handleFilter}/>
+       <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
+    </Route>
+    {/* <Route path="/recipes" >
       <Filter handleFilter={handleFilter}/>
       <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
     </Route> */}
-    <Route path="/recipes" >
-      <Filter handleFilter={handleFilter}/>
-      <RecipeBook recipes={filteredRecipes()} handleDelete={handleDelete}/>
-    </Route>
     <Route exact path="/new">
       <Form addRecipeToState={addRecipeToState}/>
     </Route>
