@@ -42,7 +42,7 @@ function Form ({addRecipeToState, recipes}) {
             <option value='Mexican'>Mexican</option>
             <option value='Italian'>Italian</option>
             </select>
-        <Link to="/recipes">
+        <Link to="/">
           <button id="form-submit" onClick={() => addRecipe()}>Submit</button>
         </Link>
 
